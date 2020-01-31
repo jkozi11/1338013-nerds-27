@@ -35,20 +35,58 @@
 </div>
 </div>
 <section>
-  <h3>Сетка:</h3>
-  <ul>
-   <li>Адаптивная</li>
-   <li>Фиксированная</li>
-   <li>Резиновая</li>
- </ul>
- <h3>Особенности:</h3>
- <ul>
-   <li>Слайдер</li>
-   <li>Блок преимуществ</li>
-   <li>Новости</li>
-   <li>Галерея</li>
-   <li>Корзина</li>
- </ul>
+  <h2>Стоимость</h2>
+  <form action="#" method="post">
+    <div class="half-width">
+      <label for="value">Стоимость:</label>
+      0<input type="range" name="value" id="value" min="0" max="15000" step="1">15000
+    </div>
+    <h2>Сетка:</h2>
+    <ul>
+      <li>
+        <label for="product-info">Адаптивная</label>
+        <input type="radio" name="product" value="adaprive" checked>
+      </li>
+      <li>
+        <input type="radio" name="product" value="fix">
+        <label for="fix">Фиксированная</label>
+      </li>
+      <li>
+        <input type="radio" name="product" value="rubber">
+        <label for="rubber">Резиновая
+        </label>
+      </li>
+    </ul>
+    <h2>Особенности:</h2>
+    <ul>
+      <li>
+       <input type="checkbox" name="slier" id="slider-field" checked>
+       <label for="slider-field">Слайдер
+       </label>
+     </li>
+     <li>
+      <input type="checkbox" name="block" id="block-field">
+      <label for="block-field">Блок преимущества
+      </label>
+    </li>
+    <li>
+      <input type="checkbox" name="new" id="new-field" checked>
+      <label for="new-field">Новости
+      </label>
+    </li>
+    <li>
+      <input type="checkbox" name="gallerey" id="gallerey-field">
+      <label for="gallerey-field">Галерея
+      </label>
+    </li>
+    <li>
+      <input type="checkbox" name="basket" id="bsket-field">
+      <label for="basket-field">Корзина
+      </label>
+    </li>
+  </ul>
+  <button type="submit">Показать</button>
+</form>
 </section>
 <section>
   <div class="catalog-tampate">
@@ -76,6 +114,20 @@
   </ul>
   <a class="pagination-btn" href="#">Вперед</a>
 </nav>
+</section>
+<section>
+  <form action="#" method="post">
+    <h2>Напишите нам</h2>
+    <p>Ваше имя</p>
+    <input type="text" name="name" placeholder="Имя Фамилия">
+    <p>Ваш e-mail</p>
+    <input type="email" name="login" placeholder="email@example.ru">
+    <p>Текст письма:</p>
+    <textarea name="comment" id="comment-field" rows="10" cols="10">В свободной форме</textarea>
+  </form>
+  <button type="submit">
+    Отправить
+  </button>
 </section>
 </main>
 <footer class="footer">
