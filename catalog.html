@@ -6,85 +6,89 @@
 </head>
 <body>
   <header>
-   <nav>
-    <img src="img/logo/nerds-logo.svg" width="160" height="65" alt="Логотип «Нердс»">
-    <ul>
-     <li><a href="#">Студия</a></li>
-     <li><a href="#">Клиенты</a></li>
-     <li><a href="#">Магазин</a></li>
-     <li><a href="#">Контакты</a></li>
-   </ul>
-   <button type="button"><img src="#" width="15" height="15" alt="ff">Корзина</button>
- </nav>
-</header>
-<main>
- <h1 class="title">Магазин готовых шаблонов</h1>
- <div class="catalog-title">
-  <div class="container">
-   <h2 class="filter-title">Фильтр</h2>
-   <section class="sort">
-    <h2 class="sort-title">Cортировка:</h2>
-    <ul>
-     <li class="sort-list-item"><a class="sort-list-active">По цене</a></li>
-     <li class="sort-list-item"><a class="sort-list-active">По типу</a></li>
-     <li class="sort-list-item"><a class="sort-list-active">По Названию</a></li>
-     <li><a class="sort-btn-up" href="#">Сортировать снизу вверх</a></li>
-     <li><a class="sort-btn-down" href="#">Сортировать сверху вниз</a></li>
-   </ul>
- </section>
-</div>
+    <nav>
+      <a href="index.html"><img src="img/logo/nerds-logo.svg" width="160" height="65" alt="Логотип «Нердс»"></a>
+      <ul>
+       <li><a href="#">Студия</a></li>
+       <li><a href="#">Клиенты</a></li>
+       <li><a href="#">Магазин</a></li>
+       <li><a href="#">Контакты</a></li>
+     </ul>
+     <a class="" href="#"><img src="img/icon/cart-icon.svg" width="15" height="15" alt="ff">Корзина</a>
+   </nav>
+ </header>
+ <main>
+   <h1 class="title">Магазин готовых шаблонов</h1>
+   <div class="catalog-title">
+    <div class="container">
+     <h2 class="filter-title">Фильтр</h2>
+     <section class="sort">
+      <h2 class="sort-title">Cортировка:</h2>
+      <ul>
+       <li class="sort-list-item"><button>По цене</button></li>
+       <li class="sort-list-item"><button>По типу</button></li>
+       <li class="sort-list-item"><button>По Названию</button></li>
+       <li><a class="sort-btn-up" href="#">Сортировать снизу вверх</a></li>
+       <li><a class="sort-btn-down" href="#">Сортировать сверху вниз</a></li>
+     </ul>
+   </section>
+ </div>
 </div>
 <section>
-  <h2>Стоимость</h2>
-  <form action="#" method="post">
-    <div class="half-width">
-      <label for="value">Стоимость:</label>
+  <h2 class="visually-hidden">Стоимость и выбор</h2>
+  <form action="https://echo.htmlacademy.ru" method="post">
+    <fieldset>
+      <legend>Стоимость:</legend>
+      <label for="value"></label>
       0<input type="range" name="value" id="value" min="0" max="15000" step="1">15000
-    </div>
-    <h2>Сетка:</h2>
-    <ul>
-      <li>
-        <input id="product-info" type="radio" name="product" value="adaprive" checked>
-        <label for="product-info">Адаптивная</label>
-      </li>
-      <li>
-        <input id="fix" type="radio" name="product" value="fix">
-        <label for="fix">Фиксированная</label>
-      </li>
-      <li>
-        <input id="rubber" type="radio" name="product" value="rubber">
-        <label for="rubber">Резиновая
+    </fieldset>
+    <fieldset>
+      <legend>Сетка:</legend>
+      <ul>
+        <li>
+          <input id="product-info" type="radio" name="grid" value="adaptive" checked>
+          <label for="product-info">Адаптивная</label>
+        </li>
+        <li>
+          <input id="fix" type="radio" name="grid" value="fixed">
+          <label for="fix">Фиксированная</label>
+        </li>
+        <li>
+          <input id="rubber" type="radio" name="grid" value="resposive">
+          <label for="rubber">Резиновая
+          </label>
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset>
+      <legend>Особенности:</legend>
+      <ul>
+        <li>
+         <input type="checkbox" name="sliedr" id="slider-field" checked>
+         <label for="slider-field">Слайдер
+         </label>
+       </li>
+       <li>
+        <input type="checkbox" name="advantages" id="advantages-field">
+        <label for="advantages-field">Блок преимущества
         </label>
       </li>
-    </ul>
-    <h2>Особенности:</h2>
-    <ul>
       <li>
-       <input type="checkbox" name="slier" id="slider-field" checked>
-       <label for="slider-field">Слайдер
-       </label>
-     </li>
-     <li>
-      <input type="checkbox" name="block" id="block-field">
-      <label for="block-field">Блок преимущества
-      </label>
-    </li>
-    <li>
-      <input type="checkbox" name="new" id="new-field" checked>
-      <label for="new-field">Новости
-      </label>
-    </li>
-    <li>
-      <input type="checkbox" name="gallerey" id="gallerey-field">
-      <label for="gallerey-field">Галерея
-      </label>
-    </li>
-    <li>
-      <input type="checkbox" name="basket" id="basket-field">
-      <label for="basket-field">Корзина
-      </label>
-    </li>
-  </ul>
+        <input type="checkbox" name="news" id="news-field" checked>
+        <label for="news-field">Новости
+        </label>
+      </li>
+      <li>
+        <input type="checkbox" name="gallery" id="gallery-field">
+        <label for="gallery-field">Галерея
+        </label>
+      </li>
+      <li>
+        <input type="checkbox" name="cart" id="cart-field">
+        <label for="cart-field">Корзина</label>
+      </li>
+    </ul>
+  </fieldset>
   <button type="submit">Показать</button>
 </form>
 </section>
@@ -103,6 +107,39 @@
  </div>
 </div>
 </section>
+<section>
+  <h2 class="visually-hidden">Информауия шаблонов</h2>
+<section>
+  <h3>PINK APP</h3>
+  <p>Продуктовый лендинг приложения для iOS и Android</p>
+  <button type="submit">9990 руб</button>
+</section>
+<section>
+  <h3>BARBERSHOP</h3>
+  <p>Мужская парикмастерская для стрижки бороды и волос</p>
+  <button type="submit">1350 руб</button>
+</section>
+<section>
+  <h3>KVAST</h3>
+  <p>Лучшее крафтовый квас от производителя</p>
+  <button type="submit">760 руб</button>
+</section>
+<section>
+  <h3>MISHKA</h3>
+  <p>Связано вручную с любовью и умилением</p>
+  <button type="submit">800 руб</button>
+</section>
+<section>
+  <h3>APLUS</h3>
+  <p>Профессиональное обучение по ремонту мобильной устройств</p>
+  <button type="submit">4400 руб</button>
+</section>
+<section>
+  <h3>SEDONA</h3>
+  <p>Красивые места потрясающего города Sedon</p>
+  <button type="submit">3500 руб</button>
+</section>
+</section>
 <section class="pagination">
   <h2 class="visually-hidden">Навигация по странице</h2>
   <nav>
@@ -116,18 +153,18 @@
 </nav>
 </section>
 <section>
-  <form action="#" method="post">
+  <form action="https://echo.htmlacademy.ru" method="post">
     <h2>Напишите нам</h2>
     <label for="appointment-name">Ваше имя</label>
     <input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
-    <label for="appointment-email">Ваш e-mail</label>
-    <input id="appointment-email" type="email" name="login" placeholder="email@example.ru">
+    <label for="appoint-email">Ваш e-mail</label>
+    <input id="appoint-email" type="email" name="email" placeholder="email@example.ru">
     <p>Текст письма:</p>
     <textarea name="comment" id="comment-field" rows="10" cols="10">В свободной форме</textarea>
+    <button type="submit">
+      Отправить
+    </button>
   </form>
-  <button type="submit">
-    Отправить
-  </button>
 </section>
 </main>
 <footer class="footer">
@@ -135,7 +172,7 @@
   <h3 class="contact">Nerds desing studio</h3>
   <address>191186,Снкт-Петербург,ул.Б.Конюшенная,д.19/8</address>
   <a href="tel:+78122757575">тел.+7(812)275-75-75</a>
-  <button class="chat" type="button">Напиши нам</button>
+  <a class="btn" href="#">Напиши нам</a>
 </section>
 <section>
   <h2>Карта</h2>
