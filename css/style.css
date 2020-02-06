@@ -1,0 +1,343 @@
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*/////////////////////VISUALLY-HIDDEN////////////////////////////*/
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.reset-list {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+.reset-fieldset {
+margin: 0;
+padding: 0;
+border: none;
+}
+
+.reset-text {
+margin: 0;
+}
+
+.button {
+  font: inherit;
+
+  text-align: center;
+  color: red;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+ color: red;
+}
+
+/*////////////////////////MAIN//////////////////////*/
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color: black;
+  background-color: silver;
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: black;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: red;
+}
+
+/*///////////////////SLIDER////////////////////////////*/
+
+.slider {
+
+}
+
+.slider-item {
+
+}
+
+.slider-title {
+
+}
+
+.slider-info {
+
+}
+
+
+/*////////////////////////////APPLICATION///////////////*/
+
+.application {
+
+}
+
+.application-title {
+
+}
+
+.application-info {
+
+}
+
+/*//////////////////////////DESK-SITY//////////////////////*/
+
+.desk-sity {
+
+}
+
+.desk-sity-title {
+
+}
+
+.desk-sity-info {
+
+}
+
+/*///////////////////////WORK/////////////////////*/
+
+.work {
+
+}
+
+.work-title {
+
+}
+
+.work-list {
+
+}
+
+/*////////////////////////DETAILS-STATISTICA////////////*/
+
+.detail-statistica {
+
+}
+
+.detail-title {
+
+}
+
+.detail-info {
+
+}
+
+.detail-value-precent {
+
+}
+
+.detail-title-precent {
+
+}
+
+/*/////////////////////FRIEND///////////////////////*/
+
+.friend {
+
+}
+
+.friend-info {
+
+}
+
+/*/////////////////MODE///////////////////*/
+
+.mode {
+
+}
+
+.mode-title {
+
+}
+
+.mode-info {
+
+}
+
+/*///////CATALOG///////////WEB-INFO////CATALOG///////////*/
+
+.web-info {
+
+}
+
+.container {
+
+}
+
+.sort {
+
+}
+
+.sort-title {
+
+}
+
+.sort-list {
+
+}
+
+.sort-list-top {
+
+}
+
+.sort-list-bottom {
+
+}
+
+/*////////////////////REGULATION/////////////////////*/
+
+.regulation-block {
+
+}
+
+.regulation-title {
+
+}
+
+.option {
+
+}
+
+.option-title {
+
+}
+
+.option-list {
+
+}
+
+.option-check-list {
+
+}
+
+/*///////////////////TEMPLATE///////////////////*/
+
+.template {
+
+}
+
+.template-list {
+
+}
+
+/*///////////////TEMPLATE-INFO//////////////////*/
+
+.template-list-info {
+
+}
+
+.template-pick {
+
+}
+
+.template-title {
+
+}
+
+.template-info {
+
+}
+
+/*////////////////////PAGINATION////////////////*/
+
+.pagination {
+
+}
+
+.pagination-list {
+
+}
+
+.pagination-list-shablon {
+
+}
+
+.pagination-button {
+
+}
+
+/*/////////////////FOOTER///////////////////////*/
+
+.footer {
+
+}
+
+.contact {
+
+}
+
+.contact-title {
+
+}
+
+.contact-address {
+
+}
+
+/*/////////////////////FOOTER-SOCIAL//////////////*/
+
+.footer-social {
+
+}
+
+.social-one {
+
+}
+
+.social-title {
+
+}
+
+.social-info {
+
+}
+
+.social-two {
+
+}
+
+.social-list {
+
+}
