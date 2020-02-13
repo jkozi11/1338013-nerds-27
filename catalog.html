@@ -8,86 +8,91 @@
  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <nav class="main-navigation">
-      <a href="index.html"><img src="img/logo/nerds-logo.svg" width="160" height="65" alt="Логотип «Нердс»"></a>
-      <ul class="site-navigation reset-list">
-       <li><a href="#">Студия</a></li>
-       <li><a href="#">Клиенты</a></li>
-       <li><a>Магазин</a></li>
-       <li><a href="#">Контакты</a></li>
-     </ul>
-     <a class="user-navigation" href="#">Корзина</a>
-   </nav>
+  <header class="main-header">
+    <div class="container">
+      <nav class="main-navigation">
+        <a href="index.html"><img src="img/logo/nerds-logo.svg" width="160" height="65" alt="Логотип «Нердс»"></a>
+        <ul class="site-navigation reset-list">
+         <li><a href="#">Студия</a></li>
+         <li><a href="#">Клиенты</a></li>
+         <li><a>Магазин</a></li>
+         <li><a href="#">Контакты</a></li>
+       </ul>
+       <ul>
+         <li><a class="user-navigation" href="#">Корзина</a></li>
+       </ul>
+     </nav>
+   </div>
+   <h1 class="web-info">Магазин готовых шаблонов</h1>
  </header>
  <main>
-   <h1 class="web-info">Магазин готовых шаблонов</h1>
-   <div class="container">
-     <h2 class="visually-hidden">Фильтр</h2>
-     <section class="sort">
-      <h2 class="sort-title">Cортировать:</h2>
-      <ul class="sort-list reset-list">
-       <li class="sort-list-type"><a href="#">По цене</a></li>
-       <li class="sort-list-type"><a href="#">По типу</a></li>
-       <li class="sort-list-type"><a href="#">По Названию</a></li>
-     </ul>
-     <ul class="sort-list">
-       <li><a aria-label="Сортировать по убыванию/возрастанию "></a></li>
-     </ul>
-   </section>
- </div>
- <section class="filter">
-  <h2 class="visually-hidden">Стоимость и выбор</h2>
-  <form action="https://echo.htmlacademy.ru" method="post">
-    <fieldset class="filter-block reset-fieldset">
-      <legend class="filter-title">Стоимость:</legend>
-      <label for="value"></label>
-      0<input type="range" name="value" id="value" min="0" max="15000" step="1">15000
-    </fieldset>
-    <fieldset class="option reset-fieldset">
-      <legend class="otion-title">Сетка:</legend>
-      <ul class="reset-list">
-        <li class="option-list">
-          <input id="product-info" type="radio" name="grid" value="adaptive" checked>
-          <label for="product-info">Адаптивная</label>
+  <div class="container">
+   <h2 class="visually-hidden">Фильтр</h2>
+   <section class="sort">
+    <h2 class="sort-title">Cортировать:</h2>
+    <ul class="sort-list reset-list">
+     <li class="sort-list-type"><a href="#">По цене</a></li>
+     <li class="sort-list-type"><a href="#">По типу</a></li>
+     <li class="sort-list-type"><a href="#">По Названию</a></li>
+   </ul>
+   <ul class="sort-list">
+     <li><a aria-label="Сортировать по убыванию/возрастанию"></a></li>
+   </ul>
+ </section>
+ <section class="catalog-global">
+  <h2 class="visually-hidden">Каталог</h2>
+   <section class="filter">
+    <h2 class="visually-hidden">Стоимость и выбор</h2>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <fieldset class="filter-block reset-fieldset">
+        <legend class="filter-title">Стоимость:</legend>
+        <label for="value"></label>
+        0<input  type="range" name="value" id="value" min="0" max="15000" step="1">15000
+      </fieldset>
+      <fieldset class="option reset-fieldset">
+        <legend class="option-title">Сетка:</legend>
+        <ul class="reset-list">
+          <li class="option-list">
+            <input id="product-info" type="radio" name="grid" value="adaptive" checked>
+            <label for="product-info">Адаптивная</label>
+          </li>
+          <li class="option-list">
+            <input id="fix" type="radio" name="grid" value="fixed">
+            <label for="fix">Фиксированная</label>
+          </li>
+          <li class="option-list">
+            <input id="rubber" type="radio" name="grid" value="resposive">
+            <label for="rubber">Резиновая</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="option-list reset-fieldset">
+        <legend class="otion-title">Особенности:</legend>
+        <ul class="reset-list">
+          <li class="option-check-list">
+           <input type="checkbox" name="sliedr" id="slider-field" checked>
+           <label for="slider-field">Слайдер</label>
+         </li>
+         <li class="option-check-list">
+          <input type="checkbox" name="advantages" id="advantages-field">
+          <label for="advantages-field">Блок преимущества</label>
         </li>
-        <li class="option-list">
-          <input id="fix" type="radio" name="grid" value="fixed">
-          <label for="fix">Фиксированная</label>
+        <li class="option-check-list">
+          <input type="checkbox" name="news" id="news-field" checked>
+          <label for="news-field">Новости</label>
         </li>
-        <li class="option-list">
-          <input id="rubber" type="radio" name="grid" value="resposive">
-          <label for="rubber">Резиновая</label>
+        <li class="option-check-list">
+          <input type="checkbox" name="gallery" id="gallery-field">
+          <label for="gallery-field">Галерея</label>
+        </li>
+        <li class="option-check-list">
+          <input type="checkbox" name="cart" id="cart-field">
+          <label for="cart-field">Корзина</label>
         </li>
       </ul>
     </fieldset>
-    <fieldset class="option-list reset-fieldset">
-      <legend class="otion-title">Особенности:</legend>
-      <ul class="reset-list">
-        <li class="option-check-list">
-         <input type="checkbox" name="sliedr" id="slider-field" checked>
-         <label for="slider-field">Слайдер</label>
-       </li>
-       <li class="option-check-list">
-        <input type="checkbox" name="advantages" id="advantages-field">
-        <label for="advantages-field">Блок преимущества</label>
-      </li>
-      <li class="option-check-list">
-        <input type="checkbox" name="news" id="news-field" checked>
-        <label for="news-field">Новости</label>
-      </li>
-      <li class="option-check-list">
-        <input type="checkbox" name="gallery" id="gallery-field">
-        <label for="gallery-field">Галерея</label>
-      </li>
-      <li class="option-check-list">
-        <input type="checkbox" name="cart" id="cart-field">
-        <label for="cart-field">Корзина</label>
-      </li>
-    </ul>
-  </fieldset>
-  <button type="submit">Показать</button>
-</form>
+    <button class="btn-white" type="submit">Показать</button>
+  </form>
 </section>
 <section class="catalog">
   <h2 class="visually-hidden">Изображения товара</h2>
@@ -100,7 +105,7 @@
     <section class="catalog-info-wrapper">
      <h3 class="catalog-title">PINK APP</h3>
      <p class="catalog-info reset-text">Продуктовый лендинг приложения для iOS и Android</p>
-     <a class="button" href="#">9990 руб</a>
+     <a class="button btn-red" href="#">9990 руб</a>
    </section>
  </div>
  <div class="catalog-image-wrapper">
@@ -112,7 +117,7 @@
   <section class="catalog-info-wrapper">
     <h3 class="catalog-title">BARBERSHOP</h3>
     <p class="catalog-info reset-text">Мужская парикмастерская для стрижки бороды и волос</p>
-    <a class="button" href="#">1350 руб</a>
+    <a class="button btn-red" href="#">1350 руб</a>
   </section>
 </div>
 <div class="catalog-image-wrapper">
@@ -124,7 +129,7 @@
   <section class="catalog-info-wrapper">
     <h3 class="catalog-title">KVAST</h3>
     <p class="catalog-info reset-text">Лучшее крафтовый квас от производителя</p>
-    <a class="button" href="#">760 руб</a>
+    <a class="button btn-red" href="#">760 руб</a>
   </section>
 </div>
 <div class="catalog-image-wrapper">
@@ -136,7 +141,7 @@
   <section class="catalog-info-wrapper">
     <h3 class="catalog-title">MISHKA</h3>
     <p class="catalog-info reset-text">Связано вручную с любовью и умилением</p>
-    <a class="button" href="#">800 руб</a>
+    <a class="button btn-red" href="#">800 руб</a>
   </section>
 </div>
 <div class="catalog-image-wrapper">
@@ -148,7 +153,7 @@
   <section class="catalog-info-wrapper">
    <h3 class="catalog-title">APLUS</h3>
    <p class="catalog-info reset-text">Профессиональное обучение по ремонту мобильной устройств</p>
-   <a class="button" href="#">4400 руб</a>
+   <a class="button btn-red" href="#">4400 руб</a>
  </section>
 </div>
 <div class="catalog-image-wrapper">
@@ -160,50 +165,56 @@
   <section class="catalog-info-wrapper">
     <h3 class="catalog-title">SEDONA</h3>
     <p class="catalog-info reset-text">Красивые места потрясающего города Sedon</p>
-    <a class="button" href="#">3500 руб</a>
+    <a class="button btn-red" href="#">3500 руб</a>
   </section>
 </div>
 </section>
+</section>
 <section class="pagination">
   <h2 class="visually-hidden">Навигация по странице</h2>
-  <nav>
-   <a class="button" href="#">Назад</a>
-   <ul class="li.pagination reset-list">
-    <li class="li.pagination-item"><a href="#">1</a></li>
-    <li class="li.pagination-item"><a href="#">2</a></li>
-    <li class="li.pagination-item"><a href="#">3</a></li>
+  <nav class="pagination-nav">
+   <ul class="pagination reset-list">
+    <li class="pagination-item"><a href="#">1</a></li>
+    <li class="pagination-item"><a href="#">2</a></li>
+    <li class="pagination-item"><a href="#">3</a></li>
   </ul>
-  <a class="li.pagination-item-button" href="#">Вперед</a>
+  <a class="button btn-white" href="#">Вперед</a>
 </nav>
 </section>
 <section class="contact">
   <h3 class="contact-title">Nerds desing studio</h3>
   <address class="contact-address">191186,Снкт-Петербург,ул.Б.Конюшенная,д.19/8</address>
   <a href="tel:+78122757575">тел.+7(812)275-75-75</a>
-  <a class="btn" href="#">Напиши нам</a>
+  <a class="button btn-red" href="#">Напиши нам</a>
 </section>
+<!--
 <section>
   <h2>Карта</h2>
   <img src="img/ppp.jpg" alt="rffr">
 </section>
+-->
+</div>
 </main>
 <footer class="footer">
-  <section class="footer-social">
-    <h2 class="visually-hidden">Соцсети</h2>
-    <section class="social-one">
-     <h3 class="social-title">Давайте дружить, это выгодно</h3>
-     <p class="social-info reset-text">Скидка 10% для друзей из социальных сетей.</p>
+  <div class="container">
+    <section class="footer-social">
+      <h2 class="visually-hidden">Соцсети</h2>
+      <section class="social-two">
+        <h2 class="visually-hidden">Ссылки на соцсети</h2>
+        <ul class="reset-list">
+          <li class="soc-list"><a href="https://vk.com/"><img src="img/social/vk-icon.png" width="26" height="15" alt="vkontakte"></a></li>
+          <li class="soc-list"><a href="https://facebook.com/"><img src="img/social/fb-icon.png" width="12" height="22" alt="facebook"></a></li>
+          <li class="soc-list"><a href="https://www.instagram.com/"><img src="img/social/insta-icon.png" width="21" height="12" alt="instagram"></a></li>
+        </ul>
+      </section>
+      <section class="social-one">
+       <h3 class="social-title">Давайте дружить, это выгодно</h3>
+       <p class="social-info reset-text">Скидка 10% для друзей из социальных сетей.</p>
+     </section>
    </section>
-   <section class="social-two">
-    <h2 class="visually-hidden">Ссылки на соцсети</h2>
-    <ul class="reset-list">
-      <li class="soc-list"><a href="https://vk.com/"><img src="img/social/vk-icon.png" width="26" height="15" alt="vkontakte"></a></li>
-      <li class="soc-list"><a href="https://facebook.com/"><img src="img/social/fb-icon.png" width="12" height="22" alt="facebook"></a></li>
-      <li class="soc-list"><a href="https://www.instagram.com/"><img src="img/social/insta-icon.png" width="21" height="12" alt="instagram"></a></li>
-    </ul>
-  </section>
-</section>
+ </div>
 </footer>
+<!--
 <section class="modal">
   <form class="name-form" action="https://echo.htmlacademy.ru" method="post">
     <h2 class="mode-title">Напишите нам</h2>
@@ -224,5 +235,6 @@
     </button>
   </form>
 </section>
+-->
 </body>
 </html>

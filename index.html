@@ -8,70 +8,79 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <header>
-   <nav class="main-navigation">
-    <img src="img/logo/nerds-logo.svg" width="160" height="65" alt="Логотип «Нердс»">
-    <ul class="site-navigation reset-list">
-     <li><a href="#">Студия</a></li>
-     <li><a href="#">Клиенты</a></li>
-     <li><a href="#">Магазин</a></li>
-     <li><a href="#">Контакты</a></li>
-   </ul>
-   <a class="user-navigation" href="#">Корзина</a>
- </nav>
-</header>
-<main>
-  <h1 class="visually-hidden">Интернет магазин шаблонов</h1>
-  <section class="slider">
-    <h2 class="visually-hidden">Слайдер</h2>
-    <section class="slider-item">
-     <h3 class="slider-title">Долго, дорого скрупулезно.</h3>
-     <p class="slider-info reset-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-     <a href="#" class="button">Узнать больше</a>
+  <header class="main-header">
+    <div class="container">
+     <nav class="main-navigation">
+       <a class="main-header-logo" href="index.html"><img src="img/logo/nerds-logo.svg" width="160" height="65" alt="Логотип «Нердс»"></a>
+       <div class="pop">
+         <ul class="site-navigation reset-list">
+           <li><a href="#">Студия</a></li>
+           <li><a href="#">Клиенты</a></li>
+           <li><a href="#">Магазин</a></li>
+           <li><a href="#">Контакты</a></li>
+         </ul>
+       </div>
+       <ul><li><a class="user-navigation" href="#">Корзина</a></li></ul>
+     </nav>
+   </div>
+ </header>
+ <main>
+  <div class="container">
+    <h1 class="visually-hidden">Интернет магазин шаблонов</h1>
+    <!--
+    <section class="slider">
+      <h2 class="visually-hidden">Слайдер</h2>
+      <section class="slider-item">
+       <h3 class="slider-title-one">Долго, дорого скрупулезно.</h3>
+       <p class="slider-info-one reset-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+       <a href="#" class="button">Узнать больше</a>
+     </section>
+     <section class="slider-item">
+       <h3 class="slider-title-two">Любим математику как никто другой</h3>
+       <p class="slider-info-two reset-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+       <a href="#" class="button">Узнать больше</a>
+     </section>
+     <section class="slider-item">
+       <h3 class="slider-title-there">Только ночь,только хардкор</h3>
+       <p class="slider-info-there reset-text">Работать днем, как все? Мы против этого.Ближе к полуночи работа только начинается.</p>
+       <a href="#" class="button">Узнать больше</a>
+     </section>
    </section>
-   <section class="slider-item">
-     <h3 class="slider-title">Любим математику как никто другой</h3>
-     <p class="slider-info reset-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-     <a href="#" class="button">Узнать больше</a>
-   </section>
-   <section class="slider-item">
-     <h3 class="slider-title">Только ночь,только хардкор</h3>
-     <p class="slider-info reset-text">Работать днем, как все? Мы против этого.Ближе к полуночи работа только начинается.</p>
-     <a href="#" class="button">Узнать больше</a>
-   </section>
- </section>
+ -->
  <section class="features">
   <h2 class="visually-hidden">Особенности</h2>
-   <section class="web-sity">
+  <section class="web-sity">
     <h2 class="visually-hidden">Информация</h2>
     <h3 class="web-sity-title">Веб сайты</h3>
     <p class="web-sity-info reset-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-    <a class="button" href="#">Заказать</a>
+    <a class="button btn-red" href="#">Заказать</a>
   </section>
   <section class="application">
     <h3 class="application-title">Приложение</h3>
     <p class="application-info reset-text">Покорите топ-10 приложений в AppStore и Google Play</p>
-    <a class="button" href="#">Заказать</a>
+    <a class="button btn-green" href="#">Заказать</a>
   </section>
   <section class="presentation">
     <h3 class="presentation-title">Презентации</h3>
     <p class="presentation-info reset-text">Вы даже не подозреваете, насколько вы изумительны!</p>
-    <a class="button" href="#">Заказать</a>
+    <a class="button btn-yellow" href="#">Заказать</a>
   </section>
 </section>
 <section class="company-info-list">
   <h2 class="visually-hidden">Карточка компании</h2>
-  <section class="adout-company">
-    <h2 class="visually-hidden">Дизайн студия</h2>
-    <h3 class="adout-company-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h3>
-    <p class="adout-company-info reset-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-    <h4 class="work-title">Выполняем заказы на разработку</h4>
-    <ul class="work reset-list">
-     <li class="work-list">Веб-сайтов любой слодности</li>
-     <li class="work-list">Мобильных приложений для ios и Andtoid</li>
-     <li class="work-list">Слайдшоу и видео для корпораативных презентаций</li>
-   </ul>
- </section>
+  <div class="cont">
+    <section class="about-company">
+      <h2 class="visually-hidden">Дизайн студия</h2>
+      <h3 class="about-company-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h3>
+      <p class="about-company-info reset-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+      <h4 class="work-title">Выполняем заказы на разработку</h4>
+      <ul class="work reset-list">
+       <li class="work-list">Веб-сайтов любой слодности</li>
+       <li class="work-list">Мобильных приложений для ios и Andtoid</li>
+       <li class="work-list">Слайдшоу и видео для корпораативных презентаций</li>
+     </ul>
+   </section>
+ </div>
  <section class="detail-statistica">
   <img src="img/logo/nerds-illustration.jpg" width="360" height="208" alt="tt">
   <h4 class="detail-title">С 2004 года Любим точность во всем:</h4>
@@ -89,13 +98,13 @@
 </table>
 </section>
 </section>
-<section class="brends">
+<section class="brend">
   <h2 class="visually-hidden">Партнеры</h2>
-  <ul class="brends-navigation reset-list">
-    <li class="brends-info"><a href="#"><img src="img/partners/html-acad.png" width="199" height="68" alt="html-acad"></a></li>
-    <li class="brends-info"><a href="#"><img src="img/partners/borb.png" width="209" height="90" alt="borodinski"></a></li>
-    <li class="brends-info"><a href="#"><img src="img/partners/pink.png" width="182" height="52" alt="pink"></a></li>
-    <li class="brends-info"><a href="#"><img src="img/partners/mishka.png" width="173" height="84" alt="mishka"></a></li>
+  <ul class="brend-navigation reset-list">
+    <li class="brend-info-one"><a href="#"><img src="img/partners/html-acad.png" width="199" height="68" alt="html-acad"></a></li>
+    <li class="brend-info"><a href="#"><img src="img/partners/borb.png" width="209" height="90" alt="borodinski"></a></li>
+    <li class="brend-info"><a href="#"><img src="img/partners/pink.png" width="182" height="52" alt="pink"></a></li>
+    <li class="brend-info"><a href="#"><img src="img/partners/mishka.png" width="173" height="84" alt="mishka"></a></li>
   </ul>
 </section>
 <section class="contact">
@@ -104,28 +113,35 @@
   <a href="tel:+78122757575">тел.+7(812)275-75-75</a>
   <a class="button" href="#">Напиши нам</a>
 </section>
+<!--
 <section>
   <h2>Карта</h2>
   <img src="img/ppp.jpg" alt="www">
 </section>
+-->
+</div>
 </main>
 <footer class="footer">
-  <section class="footer-social">
-    <h2 class="visually-hidden">Соцсети</h2>
+  <div class="container">
+    <section class="footer-social">
+      <h2 class="visually-hidden">Соцсети</h2>
+      <section class="social-two">
+       <h2 class="visually-hidden">Ссылки на соцсети</h2>
+       <ul class="reset-list">
+        <li class="soc-list"><a href="https://vk.com/"><img src="img/social/vk-icon.png" width="26" height="15" alt="vkontakte"></a></li>
+        <li class="soc-list"><a href="https://facebook.com/"><img src="img/social/fb-icon.png" width="12" height="22" alt="facebook"></a></li>
+        <li class="soc-list"><a href="https://www.instagram.com/"><img src="img/social/insta-icon.png" width="21" height="12" alt="instagram"></a></li>
+      </ul>
+    </section>
     <section class="social-one">
-      <h3 class="social-title">Давайте дружить, это выгодно</h3>
+      <h2 class="visually-hidden">Скидка по соц.сетям</h2>
+      <p class="social-title">Давайте дружить, это выгодно!</p>
       <p class="social-info reset-text">Скидка 10% для друзей из социальных сетей.</p>
     </section>
-    <section class="social-two">
-     <h2 class="visually-hidden">Ссылки на соцсети</h2>
-     <ul class="reset-list">
-      <li class="soc-list"><a href="https://vk.com/"><img src="img/social/vk-icon.png" width="26" height="15" alt="vkontakte"></a></li>
-      <li class="soc-list"><a href="https://facebook.com/"><img src="img/social/fb-icon.png" width="12" height="22" alt="facebook"></a></li>
-      <li class="soc-list"><a href="https://www.instagram.com/"><img src="img/social/insta-icon.png" width="21" height="12" alt="instagram"></a></li>
-    </ul>
   </section>
-</section>
+</div>
 </footer>
+<!--
 <section class="modal">
   <form action="https://echo.htmlacademy.ru" method="post">
     <h2 class="mode-title">Напишите нам</h2>
@@ -146,5 +162,6 @@
     </button>
   </form>
 </section>
+-->
 </body>
 </html>
