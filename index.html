@@ -13,40 +13,49 @@
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html"><img src="img/logo/nerds-logo.svg" width="160" height="65" alt="Логотип «Нердс»"></a>
         <ul class="site-navigation reset-list">
-         <li><a href="#">Студия</a></li>
-         <li><a href="#">Клиенты</a></li>
-         <li><a>Магазин</a></li>
-         <li><a href="#">Контакты</a></li>
+         <li class="active"><a href="#">Студия</a></li>
+         <li class="active"><a href="#">Клиенты</a></li>
+         <li class="active"><a href="catalog.html">Магазин</a></li>
+         <li class="active"><a href="#">Контакты</a></li>
        </ul>
        <ul class="user-navigation reset-list">
-         <li class="user-navigation"><a href="#">Корзина</a></li>
+         <li class="user-navigation pop"><a href="#">Корзина</a></li>
        </ul>
      </nav>
    </div>
  </header>
  <main>
-  <div class="container">
     <h1 class="visually-hidden">Интернет магазин шаблонов</h1>
-    <!--
+    <input class="visually-hidden" type="radio" id="slider-navigation-btn-1" name="point" checked>
+      <input class="visually-hidden" type="radio" id="slider-navigation-btn-2" name="point">
+      <input class="visually-hidden" type="radio" id="slider-navigation-btn-3" name="point">
     <section class="slider">
+      <div class="container">
       <h2 class="visually-hidden">Слайдер</h2>
-      <section class="slider-item">
+      <section class="slider-item active">
+        <div class="slider-info">
        <h3 class="slider-title-one">Долго, дорого скрупулезно.</h3>
        <p class="slider-info-one reset-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
        <a href="#" class="button">Узнать больше</a>
+     </div>
      </section>
      <section class="slider-item">
+        <div class="slider-info">
        <h3 class="slider-title-two">Любим математику как никто другой</h3>
        <p class="slider-info-two reset-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
        <a href="#" class="button">Узнать больше</a>
+     </div>
      </section>
      <section class="slider-item">
+        <div class="slider-info">
        <h3 class="slider-title-there">Только ночь,только хардкор</h3>
        <p class="slider-info-there reset-text">Работать днем, как все? Мы против этого.Ближе к полуночи работа только начинается.</p>
        <a href="#" class="button">Узнать больше</a>
+     </div>
      </section>
+   </div>
    </section>
- -->
+   <div class="container">
  <section class="features">
   <h2 class="visually-hidden">Особенности</h2>
   <section class="web-sity">
@@ -127,10 +136,10 @@
       <h2 class="visually-hidden">Соцсети</h2>
       <section class="social-two">
        <h2 class="visually-hidden">Ссылки на соцсети</h2>
-       <ul class="reset-list">
-        <li class="social-list"><a href="https://vk.com/"><img src="img/social/vk-icon.png" width="26" height="15" alt="vkontakte"></a></li>
-        <li class="social-list"><a href="https://facebook.com/"><img src="img/social/fb-icon.png" width="12" height="22" alt="facebook"></a></li>
-        <li class="social-list"><a href="https://www.instagram.com/"><img src="img/social/insta-icon.png" width="21" height="12" alt="instagram"></a></li>
+       <ul class="social-list reset-list">
+        <li><a class="social-vk" href="https://vk.com/"><img src="img/social/vk-icon.png" width="26" height="15" alt="vkontakte"></a></li>
+        <li><a class="social-fb" href="https://facebook.com/"><img src="img/social/fb-icon.png" width="12" height="22" alt="facebook"></a></li>
+        <li><a class="social-in" href="https://www.instagram.com/"><img src="img/social/insta-icon.png" width="21" height="12" alt="instagram"></a></li>
       </ul>
     </section>
     <section class="social-one">
@@ -165,3 +174,4 @@
 -->
 </body>
 </html>
+
