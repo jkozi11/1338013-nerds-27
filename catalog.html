@@ -24,80 +24,80 @@
      </nav>
    </div>
    <div class="container">
-   <h1 class="web-info">Магазин готовых шаблонов</h1>
- </div>
+     <h1 class="web-info">Магазин готовых шаблонов</h1>
+   </div>
  </header>
  <main>
   <div class="container">
- <section class="catalog-global">
-  <h2 class="visually-hidden">Каталог</h2>
-   <section class="filter">
-    <h2 class="visually-hidden">Стоимость и выбор</h2>
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="filter-block reset-fieldset">
-        <legend class="filter-title">Стоимость:</legend>
-        <label for="value"></label>
-        0<input  type="range" name="value" id="value" min="0" max="15000" step="1">15000
-      </fieldset>
-      <fieldset class="option reset-fieldset">
-        <legend class="option-title">Сетка:</legend>
-        <ul class="reset-list">
-          <li class="option-check-list">
-            <input id="product-info" type="radio" name="grid" value="adaptive" checked>
-            <label for="product-info">Адаптивная</label>
+   <section class="catalog-global">
+    <h2 class="visually-hidden">Каталог</h2>
+    <section class="filter">
+      <h2 class="visually-hidden">Стоимость и выбор</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="filter-block reset-fieldset">
+          <legend class="filter-title">Стоимость:</legend>
+          <label for="value"></label>
+          0<input  type="range" name="value" id="value" min="0" max="15000" step="1">15000
+        </fieldset>
+        <fieldset class="option reset-fieldset">
+          <legend class="option-title">Сетка:</legend>
+          <ul class="reset-list">
+            <li class="option-check-list">
+              <input id="product-info" type="radio" name="grid" value="adaptive" checked>
+              <label for="product-info">Адаптивная</label>
+            </li>
+            <li class="option-check-list">
+              <input id="fix" type="radio" name="grid" value="fixed">
+              <label for="fix">Фиксированная</label>
+            </li>
+            <li class="option-check-list">
+              <input id="rubber" type="radio" name="grid" value="resposive">
+              <label for="rubber">Резиновая</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="option-list reset-fieldset">
+          <legend class="option-title">Особенности:</legend>
+          <ul class="reset-list">
+            <li class="option-check-list">
+             <input type="checkbox" name="sliedr" id="slider-field" checked>
+             <label for="slider-field">Слайдер</label>
+           </li>
+           <li class="option-check-list">
+            <input type="checkbox" name="advantages" id="advantages-field">
+            <label for="advantages-field">Блок преимущества</label>
           </li>
           <li class="option-check-list">
-            <input id="fix" type="radio" name="grid" value="fixed">
-            <label for="fix">Фиксированная</label>
+            <input type="checkbox" name="news" id="news-field" checked>
+            <label for="news-field">Новости</label>
           </li>
           <li class="option-check-list">
-            <input id="rubber" type="radio" name="grid" value="resposive">
-            <label for="rubber">Резиновая</label>
+            <input type="checkbox" name="gallery" id="gallery-field">
+            <label for="gallery-field">Галерея</label>
+          </li>
+          <li class="option-check-list">
+            <input type="checkbox" name="cart" id="cart-field">
+            <label for="cart-field">Корзина</label>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="option-list reset-fieldset">
-        <legend class="option-title">Особенности:</legend>
-        <ul class="reset-list">
-          <li class="option-check-list">
-           <input type="checkbox" name="sliedr" id="slider-field" checked>
-           <label for="slider-field">Слайдер</label>
-         </li>
-         <li class="option-check-list">
-          <input type="checkbox" name="advantages" id="advantages-field">
-          <label for="advantages-field">Блок преимущества</label>
-        </li>
-        <li class="option-check-list">
-          <input type="checkbox" name="news" id="news-field" checked>
-          <label for="news-field">Новости</label>
-        </li>
-        <li class="option-check-list">
-          <input type="checkbox" name="gallery" id="gallery-field">
-          <label for="gallery-field">Галерея</label>
-        </li>
-        <li class="option-check-list">
-          <input type="checkbox" name="cart" id="cart-field">
-          <label for="cart-field">Корзина</label>
-        </li>
-      </ul>
-    </fieldset>
-    <button class="btn-white" type="submit">Показать</button>
-  </form>
-</section>
-<section class="catalog">
-  <h2 class="visually-hidden">Сортировка</h2>
-  <section class="catalog-sort">
-    <h3 class="sort-title">Cортировать:</h3>
-    <ul class="sort-list reset-list">
-     <li><a href="#">По цене</a></li>
-     <li><a href="#">По типу</a></li>
-     <li><a href="#">По Названию</a></li>
-     <li><a aria-label="Сортировать по убыванию/возрастанию"></a></li>
-   </ul>
- </section>
+      <button class="btn-white" type="submit">Показать</button>
+    </form>
+  </section>
+  <section class="catalog">
+    <h2 class="visually-hidden">Сортировка</h2>
+    <section class="catalog-sort">
+      <h3 class="sort-title">Cортировать:</h3>
+      <ul class="sort-list reset-list">
+       <li><a href="#">По цене</a></li>
+       <li><a href="#">По типу</a></li>
+       <li><a href="#">По Названию</a></li>
+       <li><a aria-label="Сортировать по убыванию/возрастанию"></a></li>
+     </ul>
+   </section>
    <section class="catalog-result">
-   <h2 class="visually-hidden">Шаблоны</h2>
-    <ul class="catalog-list reset-list">
+     <h2 class="visually-hidden">Шаблоны</h2>
+     <ul class="catalog-list reset-list">
       <li class="catalog-item">
         <div>
          <img class="catalog-image" src="img/template/aplus.jpg" width="360" height="576" alt="aplus">
@@ -193,10 +193,10 @@
       <h2 class="visually-hidden">Соцсети</h2>
       <section class="social-two">
         <h2 class="visually-hidden">Ссылки на соцсети</h2>
-       <ul class="social-list reset-list">
-        <li><a class="social-vk" href="https://vk.com/"><img src="img/social/vk-icon.png" width="26" height="15" alt="vkontakte"></a></li>
-        <li><a class="social-fb" href="https://facebook.com/"><img src="img/social/fb-icon.png" width="12" height="22" alt="facebook"></a></li>
-        <li><a class="social-in" href="https://www.instagram.com/"><img src="img/social/insta-icon.png" width="21" height="12" alt="instagram"></a></li>
+        <ul class="social-list reset-list">
+          <li><a class="social-vk" href="https://vk.com/"><img src="img/social/vk-icon.png" width="26" height="15" alt="vkontakte"></a></li>
+          <li><a class="social-fb" href="https://facebook.com/"><img src="img/social/fb-icon.png" width="12" height="22" alt="facebook"></a></li>
+          <li><a class="social-in" href="https://www.instagram.com/"><img src="img/social/insta-icon.png" width="21" height="12" alt="instagram"></a></li>
         </ul>
       </section>
       <section class="social-one">
