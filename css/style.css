@@ -159,13 +159,16 @@ body > * > * > * {outline: 1px solid green}
 }
 
 .site-navigation {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   margin-top: 25px;
   margin-right: 30px;
 
 }
 
 .site-navigation li {
-  display: inline;
+
 }
 
 .site-navigation a {
@@ -269,38 +272,36 @@ body > * > * > * {outline: 1px solid green}
 .features {
   width: 1200px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-left: 0px;
+  justify-content: center;
 }
 
 .web-sity {
-  width: 300px;
+  width: 400px;
+  margin-left: 20px;
 }
 
 .web-sity-title {
   margin-bottom: 26px;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
 }
 
 .web-sity-info {
-  width: 238px;
+  width: 244px;
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 24px;
 }
 
 .application {
- width: 300px;
+ width: 400px;
 }
 
 .application-title {
-
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
@@ -309,26 +310,26 @@ body > * > * > * {outline: 1px solid green}
 .application-info {
   width: 239px;
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 24px;
 }
 
 .presentation {
-  width: 300px;
+  width: 400px;
 }
 
 .presentation-title {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
 }
 
 .presentation-info {
-  width: 213px;
+  width: 240px;
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 24px;
 }
@@ -337,25 +338,23 @@ body > * > * > * {outline: 1px solid green}
 
 .company-info-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 100px;
 }
 
 .about-company {
-
+ width: 650px;
+ margin-left: 20px;
 }
 
 .about-company-title {
   width: 650px;
-  height: 87px;
   font-size: 40px;
   font-weight: 500;
   line-height: 45px;
 }
 
 .about-company-info {
- width: 616px;
- height: 40px;
  font-size: 16px;
  font-weight: 400;
  line-height: 24px;
@@ -380,11 +379,12 @@ body > * > * > * {outline: 1px solid green}
 /*////////////////////////DETAILS-STATISTICA////////////*/
 
 .detail-statistica {
-
+ width: 3600px;
+ margin-left: 150px;
 }
 
 .detail-title {
- font-size: 14px;
+ font-size: 16px;
  font-weight: 700;
  line-height: 24px;
  text-transform: uppercase;
@@ -399,7 +399,7 @@ body > * > * > * {outline: 1px solid green}
 }
 
 .detail-title-precent {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 18px;
 }
@@ -407,14 +407,21 @@ body > * > * > * {outline: 1px solid green}
 /*/////////////////////BREND///////////////////////*/
 
 .brand {
-  width: 1200px;
+
 }
 
 .brand-navigation {
  display: flex;
- justify-content: space-around;
+ margin-left: 50px;
 }
 
+.brand-navigation a {
+ display: block;
+}
+
+.brand-navigation li {
+ width: 300px;
+}
 
 /*/////////////////MODE///////////////////*/
 
@@ -452,6 +459,8 @@ body > * > * > * {outline: 1px solid green}
  }
 
  .sort-title {
+  position: absolute;
+  left: 580px;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
@@ -461,6 +470,7 @@ body > * > * > * {outline: 1px solid green}
 
 .sort-list {
   display: flex;
+  margin-left: 570px;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -468,11 +478,11 @@ body > * > * > * {outline: 1px solid green}
 }
 
 .sort-list a {
+  padding-right: 30px;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-  padding-right: 7px;
   color: black;
 
 }
@@ -510,11 +520,11 @@ body > * > * > * {outline: 1px solid green}
   }
 
   .option-title {
+    padding-top: 30px;
     font-size: 18px;
     font-weight: 700;
     line-height: 30px;
     text-transform: uppercase;
-    padding-top: 30px;
   }
 
   .option-list {
@@ -553,9 +563,8 @@ body > * > * > * {outline: 1px solid green}
 
   .catalog-sort {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: baseline;
-    margin-left: 75px;
   }
 
   .catalog-list {
@@ -633,10 +642,6 @@ body > * > * > * {outline: 1px solid green}
    display: flex;
    flex-direction: row;
    justify-content: space-between;
- }
-
- .social-one {
-   line-height: 6px;
  }
 
  .social-title {
