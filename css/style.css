@@ -85,17 +85,20 @@ body > * > * > * {outline: 1px solid green}
 }
 
 .button-say {
-   padding: 15px 45px;
-  background-color: #fb565a;
-  color:#ffffff;
   position: relative;
   top: 45px;
   left: 50px;
-  border-radius: 2px 2px 2px 2px;
+
+  padding: 15px 45px;
+
   font-size: 16px;
-font-weight: 500;
-line-height: 18px;
-text-transform: uppercase;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+  color:#ffffff;
+  border-radius: 2px 2px 2px 2px;
 }
 
 .button-say:hover {
@@ -103,7 +106,7 @@ text-transform: uppercase;
 }
 
 .button-say:focus {
-   background-color: #d7373b;
+ background-color: #d7373b;
  color: #e27173;
 }
 
@@ -137,55 +140,65 @@ text-transform: uppercase;
 .button-red {
   position: relative;
   top: 35px;
-  border-radius: 2px 2px 2px 2px;
+
   padding: 15px 40px;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  border-radius: 2px 2px 2px 2px;
   background-color: #fb565a;
   color: #fefaee;
-  font-size: 16px;
-font-weight: 500;
-line-height: 18px;
-text-transform: uppercase;
 }
 
 
 .button-green {
   position: relative;
   top: 35px;
-    border-radius: 2px 2px 2px 2px;
+
   padding: 15px 40px;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  border-radius: 2px 2px 2px 2px;
   background-color: #00ca74;
   color: #fefaee;
-  font-size: 16px;
-font-weight: 500;
-line-height: 18px;
-text-transform: uppercase;
 }
 
 .button-yellow {
   position: relative;
   top: 35px;
-    border-radius: 2px 2px 2px 2px;
+
   padding: 15px 40px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  border-radius: 2px 2px 2px 2px;
   background-color: #efc84a;
   color: #fefaee;
-  font-size: 16px;
-font-weight: 500;
-line-height: 18px;
-text-transform: uppercase;
 }
 
 .button-next {
-      padding: 13px 78px;
-      margin-left: 10px;
-  background-color: #eeeeee;
+  padding: 13px 78px;
+  margin-left: 10px;
+
   font-size: 16px;
-font-weight: 500;
-line-height: 18px;
-text-transform: uppercase;
-text-align: center;
-border-radius: 2px 2px 2px 2px;
-color: #0e0e0e;
-border-top: 2px solid #eeeeee;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+
+  border-radius: 2px 2px 2px 2px;
+  color: #0e0e0e;
+  background-color: #eeeeee;
+  border-top: 2px solid #eeeeee;
 }
 
 .pagination-item:hover {
@@ -212,13 +225,15 @@ border-top: 2px solid #eeeeee;
 
 .button-present {
   padding: 15px 92px;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+
   border-radius: 2px 2px 2px 2px;
   background-color: #eeeeee;
   color: #030303;
-  font-size: 16px;
-font-weight: 500;
-line-height: 18px;
-text-transform: uppercase;
 }
 /*////////////////////////MAIN//////////////////////*/
 
@@ -267,6 +282,7 @@ text-transform: uppercase;
 
 .site-navigation a {
   margin-right: 45px;
+
   text-transform: uppercase;
 }
 
@@ -446,6 +462,7 @@ text-transform: uppercase;
 .application-info {
   width: 239px;
   margin-bottom: 10px;
+
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -482,6 +499,7 @@ text-transform: uppercase;
 
   position: absolute;
   top: 20px;
+
   right: 100px;
   width: 300px;
   height: 146px;
@@ -496,8 +514,10 @@ text-transform: uppercase;
   position: absolute;
   top: 20px;
   right: 100px;
+
   width: 300px;
   height: 146px;
+
   background-image: url(img/illustration-2.jpg);
   background-repeat: 0 0;
 }
@@ -630,7 +650,7 @@ text-transform: uppercase;
   height: 5px;
 
   font-size: 20px;
-   bottom: 18px;
+  bottom: 18px;
 }
 
 /*/////////////////////BREND///////////////////////*/
@@ -779,7 +799,6 @@ text-transform: uppercase;
     padding-left: 20px;
 
     background-color: #f1f1f1;
-
     border-radius: 5px;
   }
 
@@ -883,7 +902,7 @@ input[type=radio] {
 
 input[type=checkbox]:checked + label::before {
   content: url("../img/icon/checkbox-on.svg");
- margin-right: 10px;
+  margin-right: 10px;
 }
 
 input[type=checkbox]:checked:hover + label::before,
@@ -903,7 +922,7 @@ input[type=checkbox]:checked:disabled + label::before {
 
 input[type=checkbox]:not(:checked) + label::before {
   content: url("../img/icon/checkbox-off.svg");
-margin-right: 10px;
+  margin-right: 10px;
 }
 
 input[type=checked]:not(:checked):hover + label::before,
@@ -1016,9 +1035,11 @@ input[type=radio]:not(:checked):disabled + label::before {
 
  .catalog-info {
   width: 360px;
+
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
+
   color: #959595;
 }
 
@@ -1026,6 +1047,7 @@ input[type=radio]:not(:checked):disabled + label::before {
 
 .pagination {
  display: flex;
+
  margin-left: 70px;
 }
 
@@ -1037,10 +1059,10 @@ input[type=radio]:not(:checked):disabled + label::before {
 .pagination-item {
  margin:0px 4px;
  padding: 10px 20px;
+
  background-color: #eeeeee;
  border-radius: 2px 2px 2px 2px;
-     border-top: 2px solid #eeeeee;
-     content: black;
+ border-top: 2px solid #eeeeee;
 }
 
 .pagination-item a {
@@ -1052,62 +1074,70 @@ input[type=radio]:not(:checked):disabled + label::before {
 
 /*.footer {
 
-}*/
+  }*/
 
-.contact {
-  position: absolute;
-  z-index: 2;
- width: 319px;
- height: 308px;
- background-color: #ffffff;
- bottom: 54px;
-  left: 140px;
+  .contact {
+    position: absolute;
+    z-index: 2;
+    bottom: 54px;
+    left: 140px;
+
+    width: 319px;
+    height: 308px;
+
+    background-color: #ffffff;
   }
 
   .contact-title {
     margin-top: 50px;
     margin-left: 50px;
-   font-size: 18px;
-   font-weight: 700;
-   line-height: 30px;
-   text-transform: uppercase;
- }
 
- .contact-address {
-  margin-left: 50px;
-      margin-top: 25px;
-          margin-bottom: 15px;
-   font-size: 16px;
-   font-weight: 400;
-   line-height: 18px;
-   font-style: normal;
-   color: #666666;
- }
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
 
- .tel {
-  margin-left: 50px;
-  color: #666666;
-}
+  .contact-address {
+    margin-left: 50px;
+    margin-top: 25px;
+    margin-bottom: 15px;
 
-.map {
-  position: relative;
-  right: 125px;
-}
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    font-style: normal;
 
-.pin {
-  position: absolute;
-  background-image: url("img/map-marker.png");
-  width: 231px;
-  height: 190px;
-  z-index: 1;
-  top: 89px;
-  right: 150px;
-}
+    color: #666666;
+  }
+
+  .tel {
+    margin-left: 50px;
+
+    color: #666666;
+  }
+
+  .map {
+    position: relative;
+    right: 125px;
+  }
+
+  .pin {
+    position: absolute;
+    z-index: 1;
+    top: 89px;
+    right: 150px;
+
+    width: 231px;
+    height: 190px;
+
+    background-image: url("img/map-marker.png");
+  }
 
 
- /*/////////////////////FOOTER-SOCIAL//////////////*/
+  /*/////////////////////FOOTER-SOCIAL//////////////*/
 
- .footer-social {
+  .footer-social {
    display: flex;
  }
 
@@ -1125,6 +1155,7 @@ input[type=radio]:not(:checked):disabled + label::before {
   font-weight: 400;
   line-height: 22px;
 }
+
 .social-list {
  display: flex;
  flex-wrap: wrap;
@@ -1135,15 +1166,16 @@ input[type=radio]:not(:checked):disabled + label::before {
 
 
 .social-button {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 79px;
+  height: 79px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 79px;
- height: 79px;
- margin-bottom: 10px;
- border-radius: 50%;
+
+  border-radius: 50%;
   background-color: #e1e1e1;
-  margin-right: 10px;
 }
 
 .social-two {
