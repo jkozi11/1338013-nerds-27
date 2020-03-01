@@ -749,6 +749,7 @@ body > * > * > * {outline: 1px solid green}
   color: black;
 
 }
+
 /*.sort-list-top {
 
 }
@@ -888,11 +889,18 @@ body > * > * > * {outline: 1px solid green}
 }
 
 .option-check-list {
-  margin-bottom: 10px;
+  position: relative;
+
 
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+}
+
+.check-box {
+  position: absolute;
+  top: 2px;
+  left: 30px;
 }
 
 input[type=checkbox],
@@ -902,7 +910,6 @@ input[type=radio] {
 
 input[type=checkbox]:checked + label::before {
   content: url("../img/icon/checkbox-on.svg");
-  margin-right: 10px;
 }
 
 input[type=checkbox]:checked:hover + label::before,
@@ -913,7 +920,6 @@ input[type=checkbox]:checked:focus + label::before {
 
 input[type=ckeckbox]:checked:active + label::before {
   content: url("../img/icon/checkbox-off.svg");
-  margin-right: 10px;
 }
 
 input[type=checkbox]:checked:disabled + label::before {
@@ -922,7 +928,6 @@ input[type=checkbox]:checked:disabled + label::before {
 
 input[type=checkbox]:not(:checked) + label::before {
   content: url("../img/icon/checkbox-off.svg");
-  margin-right: 10px;
 }
 
 input[type=checked]:not(:checked):hover + label::before,
@@ -933,7 +938,6 @@ input[type=checked]:not(:checked):focus + label::before {
 
 input[type=checkbox]:not:checked:active + label::before {
   content: url("../img/icon/checkbox-on.svg");
-  margin-right: 10px;
 }
 
 input[type=checkbox]:not:checked:disabled + label::before {
@@ -944,8 +948,6 @@ input[type=checkbox]:not:checked:disabled + label::before {
 
 input[type=radio]:checked + label::before {
   content: url("../img/icon/radio-on.svg");
-  margin-right: 10px;
-
 }
 
 input[type=radio]:checked:hover + label::before,
@@ -956,7 +958,6 @@ input[type=radio]:checked:focus + label::before {
 
 input[type=radio]:checked:active + label::before {
   content: url("../img/icon/radio-off.svg");
-  margin-right: 10px;
 }
 
 input[type=radio]:checked:disabled + label::before {
@@ -965,7 +966,6 @@ input[type=radio]:checked:disabled + label::before {
 
 input[type=radio]:not(:checked) + label::before {
   content: url("../img/icon/radio-off.svg");
-  margin-right: 10px;
 }
 
 input[type=radio]:not(:checked):hover + label::before,
@@ -976,7 +976,6 @@ input[type=radio]:not(:checked):focus + label::before {
 
 input[type=radio]:not(:checked):active + label::before {
   content: url("../img/icon/radio-on.svg");
-  margin-right: 10px;
 }
 
 input[type=radio]:not(:checked):disabled + label::before {
