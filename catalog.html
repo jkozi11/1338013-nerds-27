@@ -13,10 +13,10 @@
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html"><img src="img/logo/nerds-logo.svg" width="160" height="65" alt="Логотип «Нердс»"></a>
         <ul class="site-navigation reset-list">
-         <li class="active"><a href="#">Студия</a></li>
-         <li class="active"><a href="#">Клиенты</a></li>
-         <li class="active"><a href="catalog.html">Магазин</a></li>
-         <li class="active"><a href="#">Контакты</a></li>
+         <li><a href="#">Студия</a></li>
+         <li><a href="#">Клиенты</a></li>
+         <li><a class="pop" href="catalog.html">Магазин</a></li>
+         <li><a href="#">Контакты</a></li>
        </ul>
        <ul class="user-navigation reset-list">
          <li class="login-link"><a href="#">Корзина</a></li>
@@ -92,7 +92,7 @@
           </li>
         </ul>
       </fieldset>
-      <button class="button-present" type="submit">Показать</button>
+      <button class="button-present button-style" type="submit">Показать</button>
     </form>
   </section>
   <section class="catalog">
@@ -103,71 +103,78 @@
        <li><a href="#">По цене</a></li>
        <li><a href="#">По типу</a></li>
        <li><a href="#">По Названию</a></li>
-       <li><a aria-label="Сортировать по убыванию/возрастанию"></a></li>
+     </ul>
+       <ul class="sort-list-up-down reset-list">
+       <li><a class="sort-list-up" aria-label="Сортировать по убыванию/возрастанию"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></a></li>
+       <li><a class="sort-list-down" aria-label="Сортировать по убыванию/возрастанию"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></a></li>
      </ul>
    </section>
    <section class="catalog-result">
      <h2 class="visually-hidden">Шаблоны</h2>
      <ul class="catalog-list reset-list">
       <li class="catalog-item">
-        <div>
+          <span class="catalog-head"><svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg></span>
          <img class="catalog-image" src="img/template/aplus.jpg" width="360" height="576" alt="aplus">
-       </div>
-       <section>
-         <h3 class="catalog-title">PINK APP</h3>
-         <p class="catalog-info reset-text">Продуктовый лендинг приложения для iOS и Android</p>
-         <a class="button btn-red" href="#">9990 руб</a>
-       </section>
-     </li>
-     <li class="catalog-item">
-      <div>
+       <section class="catalog-info">
+        <h3 class="catalog-title">SEDONA</h3>
+        <p class="catalog-info-desct reset-text">Красивые места потрясающего города Sedon</p>
+        <a class="button-style button-catalog" href="#">3500 руб</a>
+      </section>
+    </li>
+    <li class="catalog-item">
+
+                  <span class="catalog-head"><svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg></span>
        <img class="catalog-image" src="img/template/barbershop.png" width="360" height="576" alt="aplus">
-     </div>
-     <section>
+
+     <section class="catalog-info">
        <h3 class="catalog-title">BARBERSHOP</h3>
-       <p class="catalog-info reset-text">Мужская парикмастерская для стрижки бороды и волос</p>
-       <a class="button btn-red" href="#">1350 руб</a>
+       <p class="catalog-info-desct reset-text">Мужская парикмастерская для стрижки бороды и волос</p>
+       <a class="button-style button-catalog" href="#">1350 руб</a>
      </section>
    </li>
    <li class="catalog-item">
-    <div>
+
+                <span class="catalog-head"><svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg></span>
      <img class="catalog-image" src="img/template/kvast.jpg" width="360" height="576" alt="aplus">
-   </div>
-   <section>
+
+   <section class="catalog-info">
     <h3 class="catalog-title">KVAST</h3>
-    <p class="catalog-info reset-text">Лучшее крафтовый квас от производителя</p>
-    <a class="button btn-red" href="#">760 руб</a>
+    <p class="catalog-info-desct reset-text">Лучшее крафтовый квас от производителя</p>
+    <a class="button-style button-catalog" href="#">760 руб</a>
   </section>
 </li>
 <li class="catalog-item">
-  <div>
+
+              <span class="catalog-head"><svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg></span>
    <img class="catalog-image" src="img/template/mishka.jpg" width="360" height="576" alt="aplus">
- </div>
- <section>
+
+ <section class="catalog-info">
   <h3 class="catalog-title">MISHKA</h3>
-  <p class="catalog-info reset-text">Связано вручную с любовью и умилением</p>
-  <a class="button btn-red" href="#">800 руб</a>
+  <p class="catalog-info-desct reset-text">Связано вручную с любовью и умилением</p>
+  <a class="button-style button-catalog" href="#">800 руб</a>
 </section>
 </li>
 <li class="catalog-item">
-  <div>
+
+              <span class="catalog-head"><svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg></span>
    <img class="catalog-image" src="img/template/aplus.jpg" width="360" height="576" alt="aplus">
- </div>
- <section>
+
+ <section class="catalog-info">
    <h3 class="catalog-title">APLUS</h3>
-   <p class="catalog-info reset-text">Профессиональное обучение по ремонту мобильной устройств</p>
-   <a class="button btn-red" href="#">4400 руб</a>
+   <p class="catalog-info-desct reset-text">Профессиональное обучение по ремонту мобильной устройств</p>
+   <a class="button-style button-catalog" href="#">4400 руб</a>
  </section>
 </li>
 <li class="catalog-item">
-  <div>
+
+              <span class="catalog-head"><svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg></span>
    <img class="catalog-image" src="img/template/sedona.jpg" width="360" height="576" alt="aplus">
- </div>
- <section>
-  <h3 class="catalog-title">SEDONA</h3>
-  <p class="catalog-info reset-text">Красивые места потрясающего города Sedon</p>
-  <a class="button btn-red" href="#">3500 руб</a>
-</section>
+
+ <section class="catalog-info">
+   <h3 class="catalog-title">PINK APP</h3>
+   <p class="catalog-info-desct reset-text">Продуктовый лендинг приложения для iOS и Android</p>
+   <a class="button-style button-catalog" href="#">9990 руб</a>
+ </section>
 </li>
 </ul>
 </section>
@@ -179,12 +186,12 @@
     <li class="pagination-item"><a href="#">2</a></li>
     <li class="pagination-item"><a href="#">3</a></li>
   </ul>
-  <a class="button-next" href="#">Следующая</a>
+  <a class="button-next button-style" href="#">Следующая</a>
 </nav>
 </section>
 </section>
 </section>
-<section class="map">
+<section class="map-catalog">
   <h2 class="visually-hidden">Карта</h2>
   <div class="pin"></div>
   <img src="img/ppp.jpg" width="1440" height="416" alt="rffr">
@@ -192,7 +199,7 @@
     <h3 class="contact-title">Nerds design studio</h3>
     <address class="contact-address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</address>
     <a class="tel" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-    <a class="button-say" href="#">Напишите нам</a>
+    <a class="button-say button-style" href="#">Напишите нам</a>
   </div>
 </section>
 </div>
