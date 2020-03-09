@@ -15,7 +15,7 @@
         <ul class="site-navigation reset-list">
          <li><a href="#">Студия</a></li>
          <li><a href="#">Клиенты</a></li>
-         <li><a class="pop" href="catalog.html">Магазин</a></li>
+         <li class="active"><a href="catalog.html">Магазин</a></li>
          <li><a href="#">Контакты</a></li>
        </ul>
        <ul class="user-navigation reset-list">
@@ -45,8 +45,8 @@
               <div class="toggle toggle-max"></div>
             </div>
             <div class="price-controls">
-              <label class="min-price">от <input name="min-price" type="number" value="0"></label>
-              <label class="max-price">до <input name="max-price" type="number" value="15000"></label>
+              <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+              <label class="max-price">до <input name="max-price" type="text" value="15 000"></label>
             </div>
           </div>
         </fieldset>
@@ -104,7 +104,7 @@
        <li><a href="#">По типу</a></li>
        <li><a href="#">По Названию</a></li>
      </ul>
-       <ul class="sort-list-up-down reset-list">
+     <ul class="sort-list-up-down reset-list">
        <li><a class="sort-list-up" aria-label="Сортировать по убыванию/возрастанию"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></a></li>
        <li><a class="sort-list-down" aria-label="Сортировать по убыванию/возрастанию"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></a></li>
      </ul>
@@ -113,76 +113,66 @@
      <h2 class="visually-hidden">Шаблоны</h2>
      <ul class="catalog-list reset-list">
       <li class="catalog-item">
-          <span class="catalog-head"><svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg></span>
-         <img class="catalog-image" src="img/template/aplus.jpg" width="360" height="576" alt="aplus">
-       <section class="catalog-info">
-        <h3 class="catalog-title">SEDONA</h3>
-        <p class="catalog-info-desct reset-text">Красивые места потрясающего города Sedon</p>
-        <a class="button-style button-catalog" href="#">3500 руб</a>
+        <span class="catalog-head"><svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg></span>
+        <img class="catalog-image" src="img/template/aplus.jpg" width="360" height="576" alt="aplus">
+        <section class="catalog-info">
+          <h3 class="catalog-title"><a href="#">SEDONA</a></h3>
+          <p class="catalog-info-desct reset-text">Красивые места потрясающего города Sedon</p>
+          <a class="button-style button-catalog" href="#">3500 руб</a>
+        </section>
+      </li>
+      <li class="catalog-item">
+        <span class="catalog-head"><svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg></span>
+        <img class="catalog-image" src="img/template/barbershop.png" width="360" height="576" alt="aplus">
+        <section class="catalog-info">
+         <h3 class="catalog-title"><a href="#">BARBERSHOP</a></h3>
+         <p class="catalog-info-desct reset-text">Мужская парикмастерская для стрижки бороды и волос</p>
+         <a class="button-style button-catalog" href="#">1350 руб</a>
+       </section>
+     </li>
+     <li class="catalog-item">
+      <span class="catalog-head"><svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg></span>
+      <img class="catalog-image" src="img/template/kvast.jpg" width="360" height="576" alt="aplus">
+      <section class="catalog-info">
+        <h3 class="catalog-title"><a href="#">KVAST</a></h3>
+        <p class="catalog-info-desct reset-text">Лучшее крафтовый квас от производителя</p>
+        <a class="button-style button-catalog" href="#">760 руб</a>
       </section>
     </li>
     <li class="catalog-item">
-
-                  <span class="catalog-head"><svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg></span>
-       <img class="catalog-image" src="img/template/barbershop.png" width="360" height="576" alt="aplus">
-
-     <section class="catalog-info">
-       <h3 class="catalog-title">BARBERSHOP</h3>
-       <p class="catalog-info-desct reset-text">Мужская парикмастерская для стрижки бороды и волос</p>
-       <a class="button-style button-catalog" href="#">1350 руб</a>
+      <span class="catalog-head"><svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg></span>
+      <img class="catalog-image" src="img/template/mishka.jpg" width="360" height="576" alt="aplus">
+      <section class="catalog-info">
+        <h3 class="catalog-title"><a href="#">MISHKA</a></h3>
+        <p class="catalog-info-desct reset-text">Связано вручную с любовью и умилением</p>
+        <a class="button-style button-catalog" href="#">800 руб</a>
+      </section>
+    </li>
+    <li class="catalog-item">
+      <span class="catalog-head"><svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg></span>
+      <img class="catalog-image" src="img/template/aplus.jpg" width="360" height="576" alt="aplus">
+      <section class="catalog-info">
+       <h3 class="catalog-title"><a href="#">APLUS</a></h3>
+       <p class="catalog-info-desct reset-text">Профессиональное обучение по ремонту мобильной устройств</p>
+       <a class="button-style button-catalog" href="#">4400 руб</a>
      </section>
    </li>
    <li class="catalog-item">
-
-                <span class="catalog-head"><svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg></span>
-     <img class="catalog-image" src="img/template/kvast.jpg" width="360" height="576" alt="aplus">
-
-   <section class="catalog-info">
-    <h3 class="catalog-title">KVAST</h3>
-    <p class="catalog-info-desct reset-text">Лучшее крафтовый квас от производителя</p>
-    <a class="button-style button-catalog" href="#">760 руб</a>
-  </section>
-</li>
-<li class="catalog-item">
-
-              <span class="catalog-head"><svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg></span>
-   <img class="catalog-image" src="img/template/mishka.jpg" width="360" height="576" alt="aplus">
-
- <section class="catalog-info">
-  <h3 class="catalog-title">MISHKA</h3>
-  <p class="catalog-info-desct reset-text">Связано вручную с любовью и умилением</p>
-  <a class="button-style button-catalog" href="#">800 руб</a>
-</section>
-</li>
-<li class="catalog-item">
-
-              <span class="catalog-head"><svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg></span>
-   <img class="catalog-image" src="img/template/aplus.jpg" width="360" height="576" alt="aplus">
-
- <section class="catalog-info">
-   <h3 class="catalog-title">APLUS</h3>
-   <p class="catalog-info-desct reset-text">Профессиональное обучение по ремонту мобильной устройств</p>
-   <a class="button-style button-catalog" href="#">4400 руб</a>
- </section>
-</li>
-<li class="catalog-item">
-
-              <span class="catalog-head"><svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg></span>
-   <img class="catalog-image" src="img/template/sedona.jpg" width="360" height="576" alt="aplus">
-
- <section class="catalog-info">
-   <h3 class="catalog-title">PINK APP</h3>
-   <p class="catalog-info-desct reset-text">Продуктовый лендинг приложения для iOS и Android</p>
-   <a class="button-style button-catalog" href="#">9990 руб</a>
- </section>
-</li>
+    <span class="catalog-head"><svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg></span>
+    <img class="catalog-image" src="img/template/sedona.jpg" width="360" height="576" alt="aplus">
+    <section class="catalog-info">
+     <h3 class="catalog-title"><a href="#">PINK APP</a></h3>
+     <p class="catalog-info-desct reset-text">Продуктовый лендинг приложения для iOS и Android</p>
+     <a class="button-style button-catalog" href="#">9990 руб</a>
+   </section>
+ </li>
 </ul>
 </section>
 <section class="pagination">
   <h2 class="visually-hidden">Навигация по странице</h2>
   <nav class="pagination-nav">
    <ul class="pagination reset-list">
-    <li class="pagination-item"><a href="#">1</a></li>
+    <li class="pagination-item active-pagination"><a href="#">1</a></li>
     <li class="pagination-item"><a href="#">2</a></li>
     <li class="pagination-item"><a href="#">3</a></li>
   </ul>
