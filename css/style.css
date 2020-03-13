@@ -445,7 +445,7 @@ ul.site-navigation li a.active:after{
 
   display: inline-block;
   width: 12px;
-  height: 13px;
+  height: 12px;
   margin-right: 17px;
 
   background: #ffffff;
@@ -480,17 +480,21 @@ ul.site-navigation li a.active:after{
 #product-1:checked ~ .site-wrapper label[for="product-1"],
 #product-2:checked ~ .site-wrapper label[for="product-2"],
 #product-3:checked ~ .site-wrapper label[for="product-3"] {
-
   position: relative;
+}
 
-  display: inline-block;
-  width: 12px;
-  height: 13px;
-
-  background: #c4c4c4;
-  border: 3px solid #fbfbfb;
+#product-1:checked ~ .site-wrapper label[for="product-1"]::before,
+#product-2:checked ~ .site-wrapper label[for="product-2"]::before,
+#product-3:checked ~ .site-wrapper label[for="product-3"]::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border:2px solid #cccccc;
   border-radius: 50%;
-  cursor: pointer;
+
 }
 
 #product-1:checked ~ .site-wrapper .slider-item {
@@ -744,7 +748,8 @@ ul.site-navigation li a.active:after{
 /*/////////////////////BREND///////////////////////*/
 
 .brand {
-  margin-top: 126px;
+  border-top: 2px solid #cccccc;
+  border-bottom: 2px solid #cccccc;
 }
 
 .brand-navigation {
@@ -763,7 +768,7 @@ ul.site-navigation li a.active:after{
 
 .brand-navigation li {
   position: relative;
-  height: 80px;
+  height: 180px;
  width: 25%;
 }
 
@@ -775,22 +780,12 @@ ul.site-navigation li a.active:after{
  opacity: 0.1;
 }
 
-.brand-navigation:after {
-  content: "";
-  position: absolute;
-  background-image: url(img/icon/divide.png);
-  width: 1160px;
-  height: 2px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  bottom: -35px;
-}
 
 .brand-navigation li:before {
   display: block;
   content: "";
   position: absolute;
-  background-image: url("img/icon/div.png");
+  background-color: #cccccc;
   width: 2px;
   height: 52px;
   top: 15px;
