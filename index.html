@@ -13,7 +13,7 @@
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html"><img src="img/logo/nerds-logo.svg" width="160" height="65" alt="Логотип «Нердс»"></a>
         <ul class="site-navigation reset-list">
-         <li class="active"><a href="#">Студия</a></li>
+         <li><a href="#">Студия</a></li>
          <li><a href="#">Клиенты</a></li>
          <li><a href="catalog.html">Магазин</a></li>
          <li><a href="#">Контакты</a></li>
@@ -149,22 +149,25 @@
   </section>
 </div>
 </footer>
-<section class="modal">
-  <form action="https://echo.htmlacademy.ru" method="post">
-    <h2 class="mode-title">Напишите нам</h2>
-    <p class="mode-info reset-text">
+<section class="modal modal-login">
+  <form class="name-form" action="https://echo.htmlacademy.ru" method="post">
+    <h2 class="modal-title">Напишите нам</h2>
+    <div class="modal-name reset-text">
       <label for="name-field">Ваше имя</label>
-      <input id="name-field" type="text" name="name" placeholder="Имя Фамилия">
-    </p>
-    <p class="mode-info reset-text">
+      <input id="name-field" type="text" name="first-name" placeholder="Имя Фамилия">
+    </div>
+    <div class="modal-name reset-text">
       <label for="email-field">Ваш e-mail</label>
       <input id="email-field" type="email" name="email" placeholder="email@example.ru">
-    </p>
-    <p class="mode-info reset-text">
+    </div>
+    <div class="modal-info reset-text">
       <label for="comment-field">Текст письма:</label>
-      <textarea name="comment" id="comment-field" rows="10" cols="10">В свободной форме</textarea>
-    </p>
-    <button type="submit">
+      <textarea class="chat" name="comment" id="comment-field" rows="10" cols="10" placeholder="В свободной форме"></textarea>
+    </div>
+    <button class="modal-close" type="button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+    <button type="submit" class="button-style button-form">
       Отправить
     </button>
   </form>

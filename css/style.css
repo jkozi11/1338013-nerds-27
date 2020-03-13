@@ -38,6 +38,8 @@ body {
 a {
   text-decoration: none;
 }
+
+
 /*/////////////////////VISUALLY-HIDDEN////////////////////////////*/
 
 
@@ -165,7 +167,7 @@ a {
 }
 
 .button-next {
-  padding: 13px 78px;
+  padding: 15px 78px;
   margin-left: 6px;
 
   border-radius: 2px 2px 2px 2px;
@@ -174,12 +176,12 @@ a {
   border-top: 2px solid #eeeeee;
 }
 
-.pagination-item:hover {
+.pagination-item a:hover {
   background-color: #bfbfbf;
   border-top: 2px solid #bfbfbf;
 }
 
-.pagination-item:active {
+.pagination-item a:active {
   background-color: #d5d5d5;
   color: #989898;
   border-top: 2px solid #c0c0c0;
@@ -284,6 +286,7 @@ a {
   background-color: #eeeeee;
   text-align: center;
   border-top: 50px solid #eeeeee;
+
 }
 
 .site-navigation {
@@ -333,9 +336,10 @@ a {
   margin-left: 20px;
 }
 
-.active a:after {
+ul.site-navigation li a.active:after{
   content: "";
   position: absolute;
+  display: block;
   bottom: 13px;
   left: 233px;
   right: 174px;
@@ -343,9 +347,7 @@ a {
   background: #fb565a;
 }
 
-.pagination .active-pagination {
-  padding-right: 17px;
-
+.pagination .active-pagination a {
   background: #ffffff;
   border:2px solid #eeeeee;
 }
@@ -742,25 +744,27 @@ a {
 /*/////////////////////BREND///////////////////////*/
 
 .brand {
-  position: relative;
   margin-top: 126px;
 }
 
 .brand-navigation {
  display: flex;
- justify-content: space-around;
  align-items: center;
 
  margin-left: -15px;
 }
 
 .brand-navigation a {
+  display: flex;
+  justify-content: center;
  opacity: 0.3;
+ align-items: center;
 }
 
 .brand-navigation li {
- width: 161px;
- margin-right: 55px;
+  position: relative;
+  height: 80px;
+ width: 25%;
 }
 
 .brand-navigation a:hover {
@@ -771,7 +775,7 @@ a {
  opacity: 0.1;
 }
 
-.brand:after {
+.brand-navigation:after {
   content: "";
   position: absolute;
   background-image: url(img/icon/divide.png);
@@ -782,31 +786,132 @@ a {
   bottom: -35px;
 }
 
+.brand-navigation li:before {
+  display: block;
+  content: "";
+  position: absolute;
+  background-image: url("img/icon/div.png");
+  width: 2px;
+  height: 52px;
+  top: 15px;
+}
+
 
 /*/////////////////MODE///////////////////*/
 
-/*.modal {
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  width: 960px;
+  height: 590px;
+  box-shadow: 0 20px 40px rgba(0, 1,1,1);
+  background-color: #ffffff;
+}
 
+.modal-login {
+  left:19%;
+  bottom: 100px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 78px;
+  right: 90px;
+  width: 21px;
+  height: 21px;
+  border: none;
+  background-color: #ffffff;
+  opacity: 0.3;
+  background-image: url("img/batton/close-cross.svg");
+}
+
+.modal-close:hover {
+ opacity: 1;
+}
+
+.modal-close:focus {
+ opacity: 0.1;
 }
 
 .modal-title {
+ margin-left: 101px;
+ margin-top: 73px;
+ font-size: 45px;
+ font-weight: 500;
+ line-height: 45px;
+}
 
+.modal label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.modal-name {
+  display: inline-block;
+  margin-left: 100px;
+  margin-right: 20px;
+}
+
+.name-form input[type="text"],
+.name-form input[type="email"] {
+ width: 100%;
+ padding: 10px 15px;
+ padding-right: 70px;
+
+ font-size: 16px;
+ font-weight: 400;
+ line-height: 18px;
+ border:2px solid #d7dcde;
+}
+
+.modal-name input:hover {
+  border: 2px solid #b4b9bb;
+}
+.modal-name input:focus {
+  border: 2px solid #000000;
+}
+
+.modal-info textarea:hover {
+  border: 2px solid #b4b9bb;
+}
+
+.modal-info textarea:focus {
+  border: 2px solid #000000;
 }
 
 .modal-info {
+ margin-left: 101px;
+ margin-top: 36px;
+}
 
-  }*/
+.chat {
+ width: 65%;
+ padding-right: 185px;
+ font-size: 16px;
+ font-weight: 400;
+ line-height: 18px;
+ border:2px solid #d7dcde;
+ padding-top: 10px;
+ padding-left: 10px;
+}
 
-  .name-form input:focus {
-    border-color: #000000;
-  }
+.button-form {
+  background-color: #fb565a;
+  padding: 15px 70px;
+  margin-left: 100px;
+  margin-top: 20px;
+  color: #ffffff;
+}
 
-  input:invalid {
-    border-color: #E74246;
-  }
-  input:valid {
-    border-color: #0000000;
-  }
+.modal-name input:focus:invalid {
+    border: 2px solid #e74246;
+}
+
+
 
   /*///////CATALOG///////////WEB-INFO////CATALOG///////////*/
 
@@ -1195,23 +1300,23 @@ li.catalog-item:hover .catalog-head {
 
 .pagination {
  display: flex;
-
- margin-left: 69px;
+margin-top: 14px;
+ margin-left: 67px;
 }
 
 .pagination-nav {
  display: flex;
  justify-content: center;
- margin-top: 55px;
+ margin-top: 40px;
 }
 
-.pagination-item {
- margin:0px 4px;
- padding: 10px 20px;
+.pagination-item a{
+ margin:0px 5px;
+ padding: 14px 21px;
 
  background-color: #eeeeee;
  border-radius: 2px 2px 2px 2px;
- border: 2px solid #eeeeee;
+ border-top: 2px solid #eeeeee;
 }
 
 .pagination-item a {
