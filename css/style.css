@@ -122,12 +122,16 @@ a {
   text-transform: uppercase;
   display: block;
   margin: 0 auto;
-      transition: background-color 0.6s ease, border-color 0.6s ease;
+  transition: background-color 0.6s ease, border-color 0.6s ease;
 }
 
 
 /*////////////////////////MAIN//////////////////////*/
 
+
+.site-navigation a.active:hover {
+  color: #000;
+}
 
 .site-navigation a,
 .user-navigation a {
@@ -865,10 +869,10 @@ li:first-child:before {
   padding: 15px 70px;
   margin-left: 100px;
   margin-top: 20px;
-      width: 260px;
+  width: 260px;
   background-color: #fb565a;
   color: #ffffff;
-      border: 1px solid;
+  border: 1px solid;
 }
 
 .input-error {
@@ -1343,7 +1347,7 @@ li.catalog-item:hover .catalog-head {
  color:black;
 }
 
-.pagination .active-pagination a {
+.pagination .active-pagination {
   background: #ffffff;
   border:2px solid #eeeeee;
 }
@@ -1358,16 +1362,11 @@ li.catalog-item:hover .catalog-head {
   border-top: 2px solid #bfbfbf;
 }
 
-.pagination-item a:active {
-  background-color: #d5d5d5;
-  color: #989898;
-  border-top: 2px solid #c0c0c0;
-}
 
-.pagination-item a:active {
-  background-color: #d5d5d5;
-  color: #989898;
-  border-top: 2px solid #c0c0c0;
+
+.pagination a.active-pagination:hover {
+ background: #ffffff;
+ border:2px solid #eeeeee;
 }
 
 .button-next {

@@ -12,15 +12,20 @@ var link = document.querySelector(".button-say");
   var form = popup.querySelector('form');
   var input = popup.querySelector('input');
 
-  input.addEventListener('submit', function(evt) {
-   if (!first.value || !email.value)  {
-    input.classList.add('input-error');
-   } else {
-    localStorage.setItem('first', first.value)
-    localStorage.setItem('email', email.value)
-   }
-  });
 
+  input.addEventListener('submit', function(evt) {
+  if (!inputfirst.value) {
+  evt.preventDefault();
+  inputfirst.classList.add('input-error');
+}
+});
+
+  input.addEventListener('submit', function(evt) {
+  if (!inputemail.value) {
+  evt.preventDefault();
+  inputemail.classList.add('input-error');
+}
+});
 
 
   form.addEventListener('submit', function(evt) {
